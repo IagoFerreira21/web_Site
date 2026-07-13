@@ -1,0 +1,56 @@
+/* Estilo geral */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo responsivo */
+.background {
+  background-image: url('fundo.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(8, 2, 2);
+  text-align: center;
+}
+
+/* Seção de contato */
+.contato {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contato h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.contato p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.contato a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .background {
+    background-attachment: scroll; /* melhora desempenho em mobile */
+  }
+}
